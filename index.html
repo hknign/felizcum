@@ -168,7 +168,7 @@
       to { opacity: 1; transform: scale(1); }
     }
 
-    /* 🎵 Botón de reproducir música */
+  
     #playBtn {
       position: fixed;
       top: 20px;
@@ -197,10 +197,10 @@
         }
 
         .photo-container img {
-        max-width: 300px;  /* tamaño máximo */
-        width: 90%;        /* responsive */
-        border-radius: 20px;  /* bordes redondeados */
-        box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* sombra elegante */
+        max-width: 300px;  
+        width: 90%;        
+        border-radius: 20px;  
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3); 
         animation: fadeInZoom 2s ease forwards;
         opacity: 0;
         }
@@ -246,10 +246,9 @@
 
   <h2 id="bigWish">🌟 ¡Disfruta tu día, Dafne! 🌟</h2>
 
-  <!-- 🎵 Botón para iniciar la música -->
+  
   <button id="playBtn">▶️ Reproducir Música</button>
 
-  <!-- Audio local -->
   <audio id="music" loop>
     <source src="cancion.mp3" type="audio/mpeg">
     Tu navegador no soporta audio HTML5.
@@ -264,10 +263,10 @@
     playBtn.addEventListener("click", () => {
       music.volume = 0.7;
       music.play();
-      playBtn.style.display = "none"; // Ocultar el botón después
+      playBtn.style.display = "none"; 
     });
 
-    // Confeti automático
+   
     setInterval(createConfetti, 200);
     setInterval(createBalloon, 1500);
 
@@ -297,4 +296,5 @@
   </script>
 </body>
 </html>
+
 
